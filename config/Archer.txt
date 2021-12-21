@@ -1,0 +1,11 @@
+Name = Saxman
+Type = Archer
+HP = 94
+MP = 10
+Attack = 68
+Armor = 0
+Level = 4
+Image1 = /home/sovest/CLionProjects/KURSACH/images/archer_1.png
+Image2 = /home/sovest/CLionProjects/KURSACH/images/archer_2.png
+Image3 = /home/sovest/CLionProjects/KURSACH/images/archer_3.png
+Image4 = /home/sovest/CLionProjects/KURSACH/images/archer_4.png

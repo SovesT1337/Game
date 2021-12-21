@@ -1,0 +1,9 @@
+Name = Ehh
+Type = Teacher
+HP = 50
+MP = 10
+Attack = 30
+Armor = 0
+Level = 1
+Image1 = /home/sovest/CLionProjects/KURSACH/images/teacher_2.png
+Image2 = /home/sovest/CLionProjects/KURSACH/images/teacher_1.png
