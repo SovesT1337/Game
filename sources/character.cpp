@@ -26,28 +26,17 @@ Character::Character()
 
 Character::Character(string file, pair<int, int> loc)
 {
-    map<string, string> config;
+    json config;
     ifstream input(file);
-    if (input.is_open())
-    {
-        while (!input.eof())
-        {
-            string st;
-            getline(input, st);
-            string st1 = st.substr(0, st.find(' '));
-            st.erase(0, st.find(' ') + 1);
-            string st2 = st.substr(2, st.size());
-            config[st1] = st2;
-        }
-    }
+    input >> config;
     input.close();
     Name = std::move(config["Name"]);
     Type = std::move(config["Type"]);
-    HP = stoi(config["HP"]);
-    MP = stoi(config["MP"]);
-    Attack = stoi(config["Attack"]);
-    Armor = stoi(config["Armor"]);
-    Level = stoi(config["Level"]);
+    HP = config["HP"];
+    MP = config["MP"];
+    Attack = config["Attack"];
+    Armor = config["Armor"];
+    Level = config["Level"];
     Image1 = std::move(config["Image1"]);
     Image2 = std::move(config["Image2"]);
     Image3 = std::move(config["Image3"]);
@@ -63,18 +52,21 @@ Character::Character(string file, pair<int, int> loc)
 }
 
 void Character::save(){
+    json config = {
+              {"Name", Name},
+              {"Type", Type},
+              {"HP", HP},
+              {"MP", MP},
+              {"Attack", Attack},
+              {"Armor", Armor},
+              {"Level", Level},
+              {"Image1", Image1},
+              {"Image2", Image2},
+              {"Image3", Image3},
+              {"Image4", Image4},
+       };
     ofstream out(Config);
-    out << "Name = " << Name << endl;
-    out << "Type = " << Type << endl;
-    out << "HP = " << to_string(HP) << endl;
-    out << "MP = " << to_string(MP) << endl;
-    out << "Attack = " << to_string(Attack) << endl;
-    out << "Armor = " << to_string(Armor) << endl;
-    out << "Level = " << to_string(Level) << endl;
-    out << "Image1 = " << Image1 << endl;
-    out << "Image2 = " << Image2 << endl;
-    out << "Image3 = " << Image3 << endl;
-    out << "Image4 = " << Image4;
+    out << config;
     out.close();
 }
 

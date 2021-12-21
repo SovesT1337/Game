@@ -4,10 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sovest/CLionProjects/KURSACH/demo/main.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo.dir/demo/main.cpp.o"
-  "/home/sovest/CLionProjects/KURSACH/build/demo_autogen/mocs_compilation.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o"
-  "/home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo.dir/sources/battle_graphics.cpp.o"
-  "/home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo.dir/sources/main_menu.cpp.o"
+  "/home/sovest/CLionProjects/Game/demo/main.cpp" "/home/sovest/CLionProjects/Game/build/CMakeFiles/demo.dir/demo/main.cpp.o"
+  "/home/sovest/CLionProjects/Game/build/demo_autogen/mocs_compilation.cpp" "/home/sovest/CLionProjects/Game/build/CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o"
+  "/home/sovest/CLionProjects/Game/sources/battle_animation.cpp" "/home/sovest/CLionProjects/Game/build/CMakeFiles/demo.dir/sources/battle_animation.cpp.o"
+  "/home/sovest/CLionProjects/Game/sources/battle_drowing.cpp" "/home/sovest/CLionProjects/Game/build/CMakeFiles/demo.dir/sources/battle_drowing.cpp.o"
+  "/home/sovest/CLionProjects/Game/sources/battle_graphics.cpp" "/home/sovest/CLionProjects/Game/build/CMakeFiles/demo.dir/sources/battle_graphics.cpp.o"
+  "/home/sovest/CLionProjects/Game/sources/battle_load.cpp" "/home/sovest/CLionProjects/Game/build/CMakeFiles/demo.dir/sources/battle_load.cpp.o"
+  "/home/sovest/CLionProjects/Game/sources/battle_press_event.cpp" "/home/sovest/CLionProjects/Game/build/CMakeFiles/demo.dir/sources/battle_press_event.cpp.o"
+  "/home/sovest/CLionProjects/Game/sources/character.cpp" "/home/sovest/CLionProjects/Game/build/CMakeFiles/demo.dir/sources/character.cpp.o"
+  "/home/sovest/CLionProjects/Game/sources/enemy.cpp" "/home/sovest/CLionProjects/Game/build/CMakeFiles/demo.dir/sources/enemy.cpp.o"
+  "/home/sovest/CLionProjects/Game/sources/main_menu.cpp" "/home/sovest/CLionProjects/Game/build/CMakeFiles/demo.dir/sources/main_menu.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,6 +28,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "demo_autogen/include"
   "../include"
+  "/home/sovest/.hunter/_Base/18e57a4/252be92/5c48e6d/Install/include"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtCore"
   "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
@@ -31,7 +38,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH.dir/DependInfo.cmake"
+  "/home/sovest/CLionProjects/Game/build/CMakeFiles/Game.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

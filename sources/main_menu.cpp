@@ -16,14 +16,21 @@ int menu(int argc, char *argv[])
 Menu::Menu(QWidget *parent)
 {
     LoadImages();
-    LoadButtons();
 
+    LoadConfig();
+    LoadButtons();
     InitGame();
+}
+
+void Menu::LoadConfig()
+{
+    ifstream input("/home/sovest/CLionProjects/Game/config/Config.json");
+    input >> config;
 }
 
 void Menu::LoadImages()
 {
-    back.load("/home/sovest/CLionProjects/KURSACH/images/back.png");
+    back.load("/home/sovest/CLionProjects/Game/images/back.png");
 }
 
 void Menu::LoadButtons()
@@ -31,12 +38,15 @@ void Menu::LoadButtons()
     level01 = new QPushButton("Level 1", this);
     level02 = new QPushButton("Level 2", this);
     level03 = new QPushButton("Level 3", this);
-    level01->move(900, 300);
-    level02->move(900, 400);
-    level03->move(900, 500);
-
     exit = new QPushButton("Exit", this);
+    level01->move(900, 300);
+    level02->move(1920, 1080);
+    level03->move(1920, 1080);
     exit->move(1650, 350);
+    if (config["Level01"] == true)
+        level02->move(900, 400);
+    if (config["Level02"] == true)
+        level03->move(900, 500);
 
     connect(exit, &QPushButton::clicked, this, &Menu::Exit);
     connect(level01, &QPushButton::clicked, this, &Menu::LoadLevel1);
@@ -53,33 +63,48 @@ void Menu::Exit()
 
 void Menu::LoadLevel1()
 {
-    ofstream out(configfile);
-    out << "Enemy1 = /home/sovest/CLionProjects/KURSACH/config/Enemy1.txt\n";
-    out << "Enemy2 = /home/sovest/CLionProjects/KURSACH/config/Enemy1.txt\n";
-    out << "Enemy3 = /home/sovest/CLionProjects/KURSACH/config/Enemy1.txt\n";
-    out << "Enemy4 = /home/sovest/CLionProjects/KURSACH/config/Enemy1.txt";
+    json battle = {{"Enemy1", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
+                   {"Enemy2", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
+                   {"Enemy3", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
+                   {"Enemy4", "/home/sovest/CLionProjects/Game/config/Enemy1.json"}};
+    ofstream out("/home/sovest/CLionProjects/Game/config/Battle.json");
+    out << battle;
+    out.close();
+    config["Level01"] = true;
+    out.open("/home/sovest/CLionProjects/Game/config/Config.json");
+    out << config;
     out.close();
     QApplication::quit();
 }
 
 void Menu::LoadLevel2()
 {
-    ofstream out(configfile);
-    out << "Enemy1 = /home/sovest/CLionProjects/KURSACH/config/Enemy1.txt\n";
-    out << "Enemy2 = /home/sovest/CLionProjects/KURSACH/config/Enemy1.txt\n";
-    out << "Enemy3 = /home/sovest/CLionProjects/KURSACH/config/Enemy1.txt\n";
-    out << "Enemy4 = /home/sovest/CLionProjects/KURSACH/config/Enemy1.txt";
+    json battle = {{"Enemy1", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
+                   {"Enemy2", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
+                   {"Enemy3", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
+                   {"Enemy4", "/home/sovest/CLionProjects/Game/config/Enemy1.json"}};
+    ofstream out("/home/sovest/CLionProjects/Game/config/Battle.json");
+    out << battle;
+    out.close();
+    config["Level02"] = true;
+    out.open("/home/sovest/CLionProjects/Game/config/Config.json");
+    out << config;
     out.close();
     QApplication::quit();
 }
 
 void Menu::LoadLevel3()
 {
-    ofstream out(configfile);
-    out << "Enemy1 = /home/sovest/CLionProjects/KURSACH/config/Enemy1.txt\n";
-    out << "Enemy2 = /home/sovest/CLionProjects/KURSACH/config/Enemy1.txt\n";
-    out << "Enemy3 = /home/sovest/CLionProjects/KURSACH/config/Enemy1.txt\n";
-    out << "Enemy4 = /home/sovest/CLionProjects/KURSACH/config/Enemy1.txt";
+    json battle = {{"Enemy1", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
+                   {"Enemy2", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
+                   {"Enemy3", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
+                   {"Enemy4", "/home/sovest/CLionProjects/Game/config/Enemy1.json"}};
+    ofstream out("/home/sovest/CLionProjects/Game/config/Battle.json");
+    out << battle;
+    out.close();
+    config["Level03"] = true;
+    out.open("/home/sovest/CLionProjects/Game/config/Config.json");
+    out << config;
     out.close();
     QApplication::quit();
 }

@@ -11,8 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/KURSACH.dir/sources/character.cpp.o"
   "CMakeFiles/KURSACH.dir/sources/enemy.cpp.o"
   "CMakeFiles/KURSACH.dir/sources/main_menu.cpp.o"
-  "libKURSACH.a"
-  "libKURSACH.pdb"
+  "libKURSACHd.a"
+  "libKURSACHd.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

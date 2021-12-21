@@ -1,6 +1,6 @@
-/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/rebuild_cache.dir
-/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/edit_cache.dir
-/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo.dir
-/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH.dir
-/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo_autogen.dir
-/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH_autogen.dir
+/home/sovest/CLionProjects/Game/build/CMakeFiles/rebuild_cache.dir
+/home/sovest/CLionProjects/Game/build/CMakeFiles/edit_cache.dir
+/home/sovest/CLionProjects/Game/build/CMakeFiles/demo.dir
+/home/sovest/CLionProjects/Game/build/CMakeFiles/Game.dir
+/home/sovest/CLionProjects/Game/build/CMakeFiles/demo_autogen.dir
+/home/sovest/CLionProjects/Game/build/CMakeFiles/Game_autogen.dir

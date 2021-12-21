@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libKURSACH.a"
+  "libKURSACHd.a"
 )

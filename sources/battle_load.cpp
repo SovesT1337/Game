@@ -2,26 +2,17 @@
 
 void Battle::LoadChar()
 {
-    stud[0] = Character("/home/sovest/CLionProjects/KURSACH/config/Damager.txt", LOC[0]);
-    stud[1] = Character("/home/sovest/CLionProjects/KURSACH/config/Archer.txt", LOC[1]);
-    stud[2] = Character("/home/sovest/CLionProjects/KURSACH/config/Tank.txt", LOC[2]);
-    stud[3] = Character("/home/sovest/CLionProjects/KURSACH/config/Wisard.txt", LOC[3]);
+    stud[0] = Character("/home/sovest/CLionProjects/Game/config/Damager.json", LOC[0]);
+    stud[1] = Character("/home/sovest/CLionProjects/Game/config/Archer.json", LOC[1]);
+    stud[2] = Character("/home/sovest/CLionProjects/Game/config/Tank.json", LOC[2]);
+    stud[3] = Character("/home/sovest/CLionProjects/Game/config/Wisard.json", LOC[3]);
 }
 
 void Battle::LoadEnemy()
 {
-    map<string, string> config;
-    ifstream input(configfile);
-    if (input.is_open())
-        while (!input.eof())
-        {
-            string st;
-            getline(input, st);
-            string st1 = st.substr(0, st.find(' '));
-            st.erase(0, st.find(' ') + 1);
-            string st2 = st.substr(2, st.size());
-            config[st1] = st2;
-        }
+    json config;
+    ifstream input("/home/sovest/CLionProjects/Game/config/Battle.json");
+    input >> config;
     input.close();
     enemy[0] = Enemy(config["Enemy1"], LOC[4]);
     enemy[1] = Enemy(config["Enemy2"], LOC[5]);

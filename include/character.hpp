@@ -9,10 +9,12 @@
 #include <QImage>
 #include <QRect>
 #include <utility>
+#include <nlohmann/json.hpp>
 
 using std::string;
 using std::pair;
 using std::vector;
+using nlohmann::json;
 
 class Character {
 private:

@@ -1,3 +1,3 @@
 # Hashes of file build rules.
-ecd2439b37eb898975c4e6e1b9b13dec CMakeFiles/KURSACH_autogen
-980441ff9c9380bcb68ef769dc0d3b72 CMakeFiles/demo_autogen
+ae53dcfaed1b4a5d1c652b0c90dd6eb7 CMakeFiles/Game_autogen
+c20d3164f0d8cc277ecf8b320125c35c CMakeFiles/demo_autogen

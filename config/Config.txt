@@ -1,4 +1,0 @@
-Level01 = false
-Level02 = false
-Level03 = false
-Alive = true

@@ -2,60 +2,78 @@
 #include <QPushButton>
 #include <battle_graphics.hpp>
 #include <main_menu.hpp>
+// #include <nlohmann/json.hpp>
+
+using nlohmann::json;
 
 void refresh()
 {
-       ofstream out("/home/sovest/CLionProjects/KURSACH/config/Archer.txt");
-       out << "Name = Saxman\n"
-              "Type = Archer\n"
-              "HP = 80\n"
-              "MP = 10\n"
-              "Attack = 40\n"
-              "Armor = 0\n"
-              "Level = 1\n"
-              "Image1 = /home/sovest/CLionProjects/KURSACH/images/archer_1.png\n"
-              "Image2 = /home/sovest/CLionProjects/KURSACH/images/archer_2.png\n"
-              "Image3 = /home/sovest/CLionProjects/KURSACH/images/archer_3.png\n"
-              "Image4 = /home/sovest/CLionProjects/KURSACH/images/archer_4.png";
+       json config = {
+              {"Name", "Saxman"},
+              {"Type", "Archer"},
+              {"HP", 80},
+              {"MP", 10},
+              {"Attack", 40},
+              {"Armor", 0},
+              {"Level", 1},
+              {"Image1", "/home/sovest/CLionProjects/Game/images/archer_1.png"},
+              {"Image2", "/home/sovest/CLionProjects/Game/images/archer_2.png"},
+              {"Image3", "/home/sovest/CLionProjects/Game/images/archer_3.png"},
+              {"Image4", "/home/sovest/CLionProjects/Game/images/archer_4.png"},
+       };
+       ofstream out("/home/sovest/CLionProjects/Game/config/Archer.json");
+       out << config;
        out.close();
-       out.open("/home/sovest/CLionProjects/KURSACH/config/Damager.txt");
-       out << "Name = Trendkiller\n"
-              "Type = Damager\n"
-              "HP = 80\n"
-              "MP = 0\n"
-              "Attack = 40\n"
-              "Armor = 10\n"
-              "Level = 1\n"
-              "Image1 = /home/sovest/CLionProjects/KURSACH/images/damager_1.png\n"
-              "Image2 = /home/sovest/CLionProjects/KURSACH/images/damager_2.png\n"
-              "Image3 = /home/sovest/CLionProjects/KURSACH/images/damager_3.png\n"
-              "Image4 = /home/sovest/CLionProjects/KURSACH/images/damager_4.png";
+
+       config = {
+              {"Name", "Trendkiller"},
+              {"Type", "Damager"},
+              {"HP", 80},
+              {"MP", 0},
+              {"Attack", 40},
+              {"Armor", 0},
+              {"Level", 1},
+              {"Image1", "/home/sovest/CLionProjects/Game/images/damager_1.png"},
+              {"Image2", "/home/sovest/CLionProjects/Game/images/damager_2.png"},
+              {"Image3", "/home/sovest/CLionProjects/Game/images/damager_3.png"},
+              {"Image4", "/home/sovest/CLionProjects/Game/images/damager_4.png"},
+       };
+       out.open("/home/sovest/CLionProjects/Game/config/Damager.json");
+       out << config;
        out.close();
-       out.open("/home/sovest/CLionProjects/KURSACH/config/Tank.txt");
-       out << "Name = Viktor\n"
-              "Type = Tank\n"
-              "HP = 100\n"
-              "MP = 10\n"
-              "Attack = 30\n"
-              "Armor = 20\n"
-              "Level = 1\n"
-              "Image1 = /home/sovest/CLionProjects/KURSACH/images/tank_1.png\n"
-              "Image2 = /home/sovest/CLionProjects/KURSACH/images/tank_2.png\n"
-              "Image3 = /home/sovest/CLionProjects/KURSACH/images/tank_3.png\n"
-              "Image4 = /home/sovest/CLionProjects/KURSACH/images/tank_4.png";
+
+       config = {
+              {"Name", "Viktor"},
+              {"Type", "Tank"},
+              {"HP", 100},
+              {"MP", 0},
+              {"Attack", 30},
+              {"Armor", 20},
+              {"Level", 1},
+              {"Image1", "/home/sovest/CLionProjects/Game/images/tank_1.png"},
+              {"Image2", "/home/sovest/CLionProjects/Game/images/tank_2.png"},
+              {"Image3", "/home/sovest/CLionProjects/Game/images/tank_3.png"},
+              {"Image4", "/home/sovest/CLionProjects/Game/images/tank_4.png"},
+       };
+       out.open("/home/sovest/CLionProjects/Game/config/Tank.json");
+       out << config;
        out.close();
-       out.open("/home/sovest/CLionProjects/KURSACH/config/Wisard.txt");
-       out << "Name = Katia\n"
-              "Type = Wisard\n"
-              "HP = 60\n"
-              "MP = 10\n"
-              "Attack = 50\n"
-              "Armor = 9\n"
-              "Level = 1\n"
-              "Image1 = /home/sovest/CLionProjects/KURSACH/images/wisard_1.png\n"
-              "Image2 = /home/sovest/CLionProjects/KURSACH/images/wisard_2.png\n"
-              "Image3 = /home/sovest/CLionProjects/KURSACH/images/wisard_3.png\n"
-              "Image4 = /home/sovest/CLionProjects/KURSACH/images/wisard_4.png";
+
+       config = {
+              {"Name", "Katia"},
+              {"Type", "Wisard"},
+              {"HP", 60},
+              {"MP", 10},
+              {"Attack", 50},
+              {"Armor", 0},
+              {"Level", 1},
+              {"Image1", "/home/sovest/CLionProjects/Game/images/wisard_1.png"},
+              {"Image2", "/home/sovest/CLionProjects/Game/images/wisard_2.png"},
+              {"Image3", "/home/sovest/CLionProjects/Game/images/wisard_3.png"},
+              {"Image4", "/home/sovest/CLionProjects/Game/images/wisard_4.png"},
+       };
+       out.open("/home/sovest/CLionProjects/Game/config/Wisard.json");
+       out << config;
        out.close();
 }
 

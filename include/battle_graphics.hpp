@@ -17,12 +17,14 @@
 #include <time.h>
 #include <map>
 #include <fstream>
+#include <nlohmann/json.hpp>
 
 #include <enemy.hpp>
 #include <character.hpp>
 
 using std::ifstream;
 using std::map;
+using nlohmann::json;
 
 class Battle : public QWidget
 {

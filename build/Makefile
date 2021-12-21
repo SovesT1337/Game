@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sovest/CLionProjects/KURSACH
+CMAKE_SOURCE_DIR = /home/sovest/CLionProjects/Game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sovest/CLionProjects/KURSACH/build
+CMAKE_BINARY_DIR = /home/sovest/CLionProjects/Game/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sovest/CLionProjects/KURSACH/build/CMakeFiles /home/sovest/CLionProjects/KURSACH/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sovest/CLionProjects/Game/build/CMakeFiles /home/sovest/CLionProjects/Game/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sovest/CLionProjects/KURSACH/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sovest/CLionProjects/Game/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,17 +124,17 @@ demo/fast:
 .PHONY : demo/fast
 
 #=============================================================================
-# Target rules for targets named KURSACH
+# Target rules for targets named Game
 
 # Build rule for target.
-KURSACH: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 KURSACH
-.PHONY : KURSACH
+Game: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Game
+.PHONY : Game
 
 # fast build rule for target.
-KURSACH/fast:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/build
-.PHONY : KURSACH/fast
+Game/fast:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/build
+.PHONY : Game/fast
 
 #=============================================================================
 # Target rules for targets named demo_autogen
@@ -150,44 +150,44 @@ demo_autogen/fast:
 .PHONY : demo_autogen/fast
 
 #=============================================================================
-# Target rules for targets named KURSACH_autogen
+# Target rules for targets named Game_autogen
 
 # Build rule for target.
-KURSACH_autogen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 KURSACH_autogen
-.PHONY : KURSACH_autogen
+Game_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Game_autogen
+.PHONY : Game_autogen
 
 # fast build rule for target.
-KURSACH_autogen/fast:
-	$(MAKE) -f CMakeFiles/KURSACH_autogen.dir/build.make CMakeFiles/KURSACH_autogen.dir/build
-.PHONY : KURSACH_autogen/fast
+Game_autogen/fast:
+	$(MAKE) -f CMakeFiles/Game_autogen.dir/build.make CMakeFiles/Game_autogen.dir/build
+.PHONY : Game_autogen/fast
 
-KURSACH_autogen/mocs_compilation.o: KURSACH_autogen/mocs_compilation.cpp.o
+Game_autogen/mocs_compilation.o: Game_autogen/mocs_compilation.cpp.o
 
-.PHONY : KURSACH_autogen/mocs_compilation.o
+.PHONY : Game_autogen/mocs_compilation.o
 
 # target to build an object file
-KURSACH_autogen/mocs_compilation.cpp.o:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.o
-.PHONY : KURSACH_autogen/mocs_compilation.cpp.o
+Game_autogen/mocs_compilation.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Game_autogen/mocs_compilation.cpp.o
+.PHONY : Game_autogen/mocs_compilation.cpp.o
 
-KURSACH_autogen/mocs_compilation.i: KURSACH_autogen/mocs_compilation.cpp.i
+Game_autogen/mocs_compilation.i: Game_autogen/mocs_compilation.cpp.i
 
-.PHONY : KURSACH_autogen/mocs_compilation.i
+.PHONY : Game_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-KURSACH_autogen/mocs_compilation.cpp.i:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.i
-.PHONY : KURSACH_autogen/mocs_compilation.cpp.i
+Game_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Game_autogen/mocs_compilation.cpp.i
+.PHONY : Game_autogen/mocs_compilation.cpp.i
 
-KURSACH_autogen/mocs_compilation.s: KURSACH_autogen/mocs_compilation.cpp.s
+Game_autogen/mocs_compilation.s: Game_autogen/mocs_compilation.cpp.s
 
-.PHONY : KURSACH_autogen/mocs_compilation.s
+.PHONY : Game_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-KURSACH_autogen/mocs_compilation.cpp.s:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.s
-.PHONY : KURSACH_autogen/mocs_compilation.cpp.s
+Game_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Game_autogen/mocs_compilation.cpp.s
+.PHONY : Game_autogen/mocs_compilation.cpp.s
 
 demo/main.o: demo/main.cpp.o
 
@@ -249,7 +249,7 @@ sources/battle_animation.o: sources/battle_animation.cpp.o
 
 # target to build an object file
 sources/battle_animation.cpp.o:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_animation.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_animation.cpp.o
 .PHONY : sources/battle_animation.cpp.o
 
 sources/battle_animation.i: sources/battle_animation.cpp.i
@@ -258,7 +258,7 @@ sources/battle_animation.i: sources/battle_animation.cpp.i
 
 # target to preprocess a source file
 sources/battle_animation.cpp.i:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_animation.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_animation.cpp.i
 .PHONY : sources/battle_animation.cpp.i
 
 sources/battle_animation.s: sources/battle_animation.cpp.s
@@ -267,7 +267,7 @@ sources/battle_animation.s: sources/battle_animation.cpp.s
 
 # target to generate assembly for a file
 sources/battle_animation.cpp.s:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_animation.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_animation.cpp.s
 .PHONY : sources/battle_animation.cpp.s
 
 sources/battle_drowing.o: sources/battle_drowing.cpp.o
@@ -276,7 +276,7 @@ sources/battle_drowing.o: sources/battle_drowing.cpp.o
 
 # target to build an object file
 sources/battle_drowing.cpp.o:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_drowing.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_drowing.cpp.o
 .PHONY : sources/battle_drowing.cpp.o
 
 sources/battle_drowing.i: sources/battle_drowing.cpp.i
@@ -285,7 +285,7 @@ sources/battle_drowing.i: sources/battle_drowing.cpp.i
 
 # target to preprocess a source file
 sources/battle_drowing.cpp.i:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_drowing.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_drowing.cpp.i
 .PHONY : sources/battle_drowing.cpp.i
 
 sources/battle_drowing.s: sources/battle_drowing.cpp.s
@@ -294,7 +294,7 @@ sources/battle_drowing.s: sources/battle_drowing.cpp.s
 
 # target to generate assembly for a file
 sources/battle_drowing.cpp.s:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_drowing.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_drowing.cpp.s
 .PHONY : sources/battle_drowing.cpp.s
 
 sources/battle_graphics.o: sources/battle_graphics.cpp.o
@@ -304,7 +304,6 @@ sources/battle_graphics.o: sources/battle_graphics.cpp.o
 # target to build an object file
 sources/battle_graphics.cpp.o:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_graphics.cpp.o
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.o
 .PHONY : sources/battle_graphics.cpp.o
 
 sources/battle_graphics.i: sources/battle_graphics.cpp.i
@@ -314,7 +313,6 @@ sources/battle_graphics.i: sources/battle_graphics.cpp.i
 # target to preprocess a source file
 sources/battle_graphics.cpp.i:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_graphics.cpp.i
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.i
 .PHONY : sources/battle_graphics.cpp.i
 
 sources/battle_graphics.s: sources/battle_graphics.cpp.s
@@ -324,7 +322,6 @@ sources/battle_graphics.s: sources/battle_graphics.cpp.s
 # target to generate assembly for a file
 sources/battle_graphics.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_graphics.cpp.s
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.s
 .PHONY : sources/battle_graphics.cpp.s
 
 sources/battle_load.o: sources/battle_load.cpp.o
@@ -333,7 +330,7 @@ sources/battle_load.o: sources/battle_load.cpp.o
 
 # target to build an object file
 sources/battle_load.cpp.o:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_load.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_load.cpp.o
 .PHONY : sources/battle_load.cpp.o
 
 sources/battle_load.i: sources/battle_load.cpp.i
@@ -342,7 +339,7 @@ sources/battle_load.i: sources/battle_load.cpp.i
 
 # target to preprocess a source file
 sources/battle_load.cpp.i:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_load.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_load.cpp.i
 .PHONY : sources/battle_load.cpp.i
 
 sources/battle_load.s: sources/battle_load.cpp.s
@@ -351,7 +348,7 @@ sources/battle_load.s: sources/battle_load.cpp.s
 
 # target to generate assembly for a file
 sources/battle_load.cpp.s:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_load.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_load.cpp.s
 .PHONY : sources/battle_load.cpp.s
 
 sources/battle_press_event.o: sources/battle_press_event.cpp.o
@@ -360,7 +357,7 @@ sources/battle_press_event.o: sources/battle_press_event.cpp.o
 
 # target to build an object file
 sources/battle_press_event.cpp.o:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_press_event.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_press_event.cpp.o
 .PHONY : sources/battle_press_event.cpp.o
 
 sources/battle_press_event.i: sources/battle_press_event.cpp.i
@@ -369,7 +366,7 @@ sources/battle_press_event.i: sources/battle_press_event.cpp.i
 
 # target to preprocess a source file
 sources/battle_press_event.cpp.i:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_press_event.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_press_event.cpp.i
 .PHONY : sources/battle_press_event.cpp.i
 
 sources/battle_press_event.s: sources/battle_press_event.cpp.s
@@ -378,7 +375,7 @@ sources/battle_press_event.s: sources/battle_press_event.cpp.s
 
 # target to generate assembly for a file
 sources/battle_press_event.cpp.s:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_press_event.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_press_event.cpp.s
 .PHONY : sources/battle_press_event.cpp.s
 
 sources/character.o: sources/character.cpp.o
@@ -387,7 +384,7 @@ sources/character.o: sources/character.cpp.o
 
 # target to build an object file
 sources/character.cpp.o:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/character.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/character.cpp.o
 .PHONY : sources/character.cpp.o
 
 sources/character.i: sources/character.cpp.i
@@ -396,7 +393,7 @@ sources/character.i: sources/character.cpp.i
 
 # target to preprocess a source file
 sources/character.cpp.i:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/character.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/character.cpp.i
 .PHONY : sources/character.cpp.i
 
 sources/character.s: sources/character.cpp.s
@@ -405,7 +402,7 @@ sources/character.s: sources/character.cpp.s
 
 # target to generate assembly for a file
 sources/character.cpp.s:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/character.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/character.cpp.s
 .PHONY : sources/character.cpp.s
 
 sources/enemy.o: sources/enemy.cpp.o
@@ -414,7 +411,7 @@ sources/enemy.o: sources/enemy.cpp.o
 
 # target to build an object file
 sources/enemy.cpp.o:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/enemy.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/enemy.cpp.o
 .PHONY : sources/enemy.cpp.o
 
 sources/enemy.i: sources/enemy.cpp.i
@@ -423,7 +420,7 @@ sources/enemy.i: sources/enemy.cpp.i
 
 # target to preprocess a source file
 sources/enemy.cpp.i:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/enemy.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/enemy.cpp.i
 .PHONY : sources/enemy.cpp.i
 
 sources/enemy.s: sources/enemy.cpp.s
@@ -432,7 +429,7 @@ sources/enemy.s: sources/enemy.cpp.s
 
 # target to generate assembly for a file
 sources/enemy.cpp.s:
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/enemy.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/enemy.cpp.s
 .PHONY : sources/enemy.cpp.s
 
 sources/main_menu.o: sources/main_menu.cpp.o
@@ -442,7 +439,6 @@ sources/main_menu.o: sources/main_menu.cpp.o
 # target to build an object file
 sources/main_menu.cpp.o:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/main_menu.cpp.o
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/main_menu.cpp.o
 .PHONY : sources/main_menu.cpp.o
 
 sources/main_menu.i: sources/main_menu.cpp.i
@@ -452,7 +448,6 @@ sources/main_menu.i: sources/main_menu.cpp.i
 # target to preprocess a source file
 sources/main_menu.cpp.i:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/main_menu.cpp.i
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/main_menu.cpp.i
 .PHONY : sources/main_menu.cpp.i
 
 sources/main_menu.s: sources/main_menu.cpp.s
@@ -462,7 +457,6 @@ sources/main_menu.s: sources/main_menu.cpp.s
 # target to generate assembly for a file
 sources/main_menu.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/main_menu.cpp.s
-	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/main_menu.cpp.s
 .PHONY : sources/main_menu.cpp.s
 
 # Help Target
@@ -474,12 +468,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... demo"
-	@echo "... KURSACH"
+	@echo "... Game"
 	@echo "... demo_autogen"
-	@echo "... KURSACH_autogen"
-	@echo "... KURSACH_autogen/mocs_compilation.o"
-	@echo "... KURSACH_autogen/mocs_compilation.i"
-	@echo "... KURSACH_autogen/mocs_compilation.s"
+	@echo "... Game_autogen"
+	@echo "... Game_autogen/mocs_compilation.o"
+	@echo "... Game_autogen/mocs_compilation.i"
+	@echo "... Game_autogen/mocs_compilation.s"
 	@echo "... demo/main.o"
 	@echo "... demo/main.i"
 	@echo "... demo/main.s"

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sovest/CLionProjects/KURSACH
+CMAKE_SOURCE_DIR = /home/sovest/CLionProjects/Game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sovest/CLionProjects/KURSACH/build
+CMAKE_BINARY_DIR = /home/sovest/CLionProjects/Game/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/demo.dir/depend.make
@@ -59,77 +59,167 @@ include CMakeFiles/demo.dir/flags.make
 
 CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o: demo_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/KURSACH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o -c /home/sovest/CLionProjects/KURSACH/build/demo_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o"
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o -c /home/sovest/CLionProjects/Game/build/demo_autogen/mocs_compilation.cpp
 
 CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/KURSACH/build/demo_autogen/mocs_compilation.cpp > CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/Game/build/demo_autogen/mocs_compilation.cpp > CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/KURSACH/build/demo_autogen/mocs_compilation.cpp -o CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/Game/build/demo_autogen/mocs_compilation.cpp -o CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/demo.dir/demo/main.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/demo/main.cpp.o: ../demo/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/KURSACH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/demo.dir/demo/main.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/demo/main.cpp.o -c /home/sovest/CLionProjects/KURSACH/demo/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/demo.dir/demo/main.cpp.o"
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/demo/main.cpp.o -c /home/sovest/CLionProjects/Game/demo/main.cpp
 
 CMakeFiles/demo.dir/demo/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/demo/main.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/KURSACH/demo/main.cpp > CMakeFiles/demo.dir/demo/main.cpp.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/Game/demo/main.cpp > CMakeFiles/demo.dir/demo/main.cpp.i
 
 CMakeFiles/demo.dir/demo/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/demo/main.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/KURSACH/demo/main.cpp -o CMakeFiles/demo.dir/demo/main.cpp.s
-
-CMakeFiles/demo.dir/sources/battle_graphics.cpp.o: CMakeFiles/demo.dir/flags.make
-CMakeFiles/demo.dir/sources/battle_graphics.cpp.o: ../sources/battle_graphics.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/KURSACH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/demo.dir/sources/battle_graphics.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/sources/battle_graphics.cpp.o -c /home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp
-
-CMakeFiles/demo.dir/sources/battle_graphics.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/sources/battle_graphics.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp > CMakeFiles/demo.dir/sources/battle_graphics.cpp.i
-
-CMakeFiles/demo.dir/sources/battle_graphics.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/sources/battle_graphics.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp -o CMakeFiles/demo.dir/sources/battle_graphics.cpp.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/Game/demo/main.cpp -o CMakeFiles/demo.dir/demo/main.cpp.s
 
 CMakeFiles/demo.dir/sources/main_menu.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/sources/main_menu.cpp.o: ../sources/main_menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/KURSACH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/demo.dir/sources/main_menu.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/sources/main_menu.cpp.o -c /home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/demo.dir/sources/main_menu.cpp.o"
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/sources/main_menu.cpp.o -c /home/sovest/CLionProjects/Game/sources/main_menu.cpp
 
 CMakeFiles/demo.dir/sources/main_menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/sources/main_menu.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp > CMakeFiles/demo.dir/sources/main_menu.cpp.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/Game/sources/main_menu.cpp > CMakeFiles/demo.dir/sources/main_menu.cpp.i
 
 CMakeFiles/demo.dir/sources/main_menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/sources/main_menu.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp -o CMakeFiles/demo.dir/sources/main_menu.cpp.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/Game/sources/main_menu.cpp -o CMakeFiles/demo.dir/sources/main_menu.cpp.s
+
+CMakeFiles/demo.dir/sources/battle_graphics.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/sources/battle_graphics.cpp.o: ../sources/battle_graphics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/demo.dir/sources/battle_graphics.cpp.o"
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/sources/battle_graphics.cpp.o -c /home/sovest/CLionProjects/Game/sources/battle_graphics.cpp
+
+CMakeFiles/demo.dir/sources/battle_graphics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/sources/battle_graphics.cpp.i"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/Game/sources/battle_graphics.cpp > CMakeFiles/demo.dir/sources/battle_graphics.cpp.i
+
+CMakeFiles/demo.dir/sources/battle_graphics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/sources/battle_graphics.cpp.s"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/Game/sources/battle_graphics.cpp -o CMakeFiles/demo.dir/sources/battle_graphics.cpp.s
+
+CMakeFiles/demo.dir/sources/battle_press_event.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/sources/battle_press_event.cpp.o: ../sources/battle_press_event.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/demo.dir/sources/battle_press_event.cpp.o"
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/sources/battle_press_event.cpp.o -c /home/sovest/CLionProjects/Game/sources/battle_press_event.cpp
+
+CMakeFiles/demo.dir/sources/battle_press_event.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/sources/battle_press_event.cpp.i"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/Game/sources/battle_press_event.cpp > CMakeFiles/demo.dir/sources/battle_press_event.cpp.i
+
+CMakeFiles/demo.dir/sources/battle_press_event.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/sources/battle_press_event.cpp.s"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/Game/sources/battle_press_event.cpp -o CMakeFiles/demo.dir/sources/battle_press_event.cpp.s
+
+CMakeFiles/demo.dir/sources/battle_drowing.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/sources/battle_drowing.cpp.o: ../sources/battle_drowing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/demo.dir/sources/battle_drowing.cpp.o"
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/sources/battle_drowing.cpp.o -c /home/sovest/CLionProjects/Game/sources/battle_drowing.cpp
+
+CMakeFiles/demo.dir/sources/battle_drowing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/sources/battle_drowing.cpp.i"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/Game/sources/battle_drowing.cpp > CMakeFiles/demo.dir/sources/battle_drowing.cpp.i
+
+CMakeFiles/demo.dir/sources/battle_drowing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/sources/battle_drowing.cpp.s"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/Game/sources/battle_drowing.cpp -o CMakeFiles/demo.dir/sources/battle_drowing.cpp.s
+
+CMakeFiles/demo.dir/sources/battle_load.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/sources/battle_load.cpp.o: ../sources/battle_load.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/demo.dir/sources/battle_load.cpp.o"
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/sources/battle_load.cpp.o -c /home/sovest/CLionProjects/Game/sources/battle_load.cpp
+
+CMakeFiles/demo.dir/sources/battle_load.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/sources/battle_load.cpp.i"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/Game/sources/battle_load.cpp > CMakeFiles/demo.dir/sources/battle_load.cpp.i
+
+CMakeFiles/demo.dir/sources/battle_load.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/sources/battle_load.cpp.s"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/Game/sources/battle_load.cpp -o CMakeFiles/demo.dir/sources/battle_load.cpp.s
+
+CMakeFiles/demo.dir/sources/battle_animation.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/sources/battle_animation.cpp.o: ../sources/battle_animation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/demo.dir/sources/battle_animation.cpp.o"
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/sources/battle_animation.cpp.o -c /home/sovest/CLionProjects/Game/sources/battle_animation.cpp
+
+CMakeFiles/demo.dir/sources/battle_animation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/sources/battle_animation.cpp.i"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/Game/sources/battle_animation.cpp > CMakeFiles/demo.dir/sources/battle_animation.cpp.i
+
+CMakeFiles/demo.dir/sources/battle_animation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/sources/battle_animation.cpp.s"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/Game/sources/battle_animation.cpp -o CMakeFiles/demo.dir/sources/battle_animation.cpp.s
+
+CMakeFiles/demo.dir/sources/enemy.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/sources/enemy.cpp.o: ../sources/enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/demo.dir/sources/enemy.cpp.o"
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/sources/enemy.cpp.o -c /home/sovest/CLionProjects/Game/sources/enemy.cpp
+
+CMakeFiles/demo.dir/sources/enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/sources/enemy.cpp.i"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/Game/sources/enemy.cpp > CMakeFiles/demo.dir/sources/enemy.cpp.i
+
+CMakeFiles/demo.dir/sources/enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/sources/enemy.cpp.s"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/Game/sources/enemy.cpp -o CMakeFiles/demo.dir/sources/enemy.cpp.s
+
+CMakeFiles/demo.dir/sources/character.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/sources/character.cpp.o: ../sources/character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/demo.dir/sources/character.cpp.o"
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/sources/character.cpp.o -c /home/sovest/CLionProjects/Game/sources/character.cpp
+
+CMakeFiles/demo.dir/sources/character.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/sources/character.cpp.i"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/Game/sources/character.cpp > CMakeFiles/demo.dir/sources/character.cpp.i
+
+CMakeFiles/demo.dir/sources/character.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/sources/character.cpp.s"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/Game/sources/character.cpp -o CMakeFiles/demo.dir/sources/character.cpp.s
 
 # Object files for target demo
 demo_OBJECTS = \
 "CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/demo.dir/demo/main.cpp.o" \
+"CMakeFiles/demo.dir/sources/main_menu.cpp.o" \
 "CMakeFiles/demo.dir/sources/battle_graphics.cpp.o" \
-"CMakeFiles/demo.dir/sources/main_menu.cpp.o"
+"CMakeFiles/demo.dir/sources/battle_press_event.cpp.o" \
+"CMakeFiles/demo.dir/sources/battle_drowing.cpp.o" \
+"CMakeFiles/demo.dir/sources/battle_load.cpp.o" \
+"CMakeFiles/demo.dir/sources/battle_animation.cpp.o" \
+"CMakeFiles/demo.dir/sources/enemy.cpp.o" \
+"CMakeFiles/demo.dir/sources/character.cpp.o"
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
 
 demo: CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o
 demo: CMakeFiles/demo.dir/demo/main.cpp.o
-demo: CMakeFiles/demo.dir/sources/battle_graphics.cpp.o
 demo: CMakeFiles/demo.dir/sources/main_menu.cpp.o
+demo: CMakeFiles/demo.dir/sources/battle_graphics.cpp.o
+demo: CMakeFiles/demo.dir/sources/battle_press_event.cpp.o
+demo: CMakeFiles/demo.dir/sources/battle_drowing.cpp.o
+demo: CMakeFiles/demo.dir/sources/battle_load.cpp.o
+demo: CMakeFiles/demo.dir/sources/battle_animation.cpp.o
+demo: CMakeFiles/demo.dir/sources/enemy.cpp.o
+demo: CMakeFiles/demo.dir/sources/character.cpp.o
 demo: CMakeFiles/demo.dir/build.make
-demo: libKURSACH.a
+demo: libGamed.a
 demo: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
 demo: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
 demo: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
 demo: CMakeFiles/demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sovest/CLionProjects/KURSACH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sovest/CLionProjects/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -142,6 +232,6 @@ CMakeFiles/demo.dir/clean:
 .PHONY : CMakeFiles/demo.dir/clean
 
 CMakeFiles/demo.dir/depend:
-	cd /home/sovest/CLionProjects/KURSACH/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sovest/CLionProjects/KURSACH /home/sovest/CLionProjects/KURSACH /home/sovest/CLionProjects/KURSACH/build /home/sovest/CLionProjects/KURSACH/build /home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sovest/CLionProjects/Game/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sovest/CLionProjects/Game /home/sovest/CLionProjects/Game /home/sovest/CLionProjects/Game/build /home/sovest/CLionProjects/Game/build /home/sovest/CLionProjects/Game/build/CMakeFiles/demo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/demo.dir/depend
 

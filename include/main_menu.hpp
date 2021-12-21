@@ -15,16 +15,21 @@
 #include <QPainter>
 #include <string>
 #include <fstream>
+#include <nlohmann/json.hpp>
 
 #include <enemy.hpp>
 #include <character.hpp>
 
 using std::string;
 using std::ofstream;
+using std::ifstream;
+using nlohmann::json;
 
 class Menu : public QWidget
 {
 private:
+    json config;
+
     QImage back;
 
     QLabel *background;
@@ -45,6 +50,7 @@ public:
 protected:
     void LoadImages();
     void LoadButtons();
+    void LoadConfig();
     void InitGame();
     void paintEvent(QPaintEvent *);
     void timerEvent(QTimerEvent *);

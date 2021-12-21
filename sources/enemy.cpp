@@ -23,26 +23,16 @@ Enemy::Enemy()
 
 Enemy::Enemy(string file, pair<int, int> loc)
 {
-    map<string, string> config;
+    json config;
     ifstream input(file);
-    if (input.is_open())
-    {
-        while (!input.eof())
-        {
-            string st;
-            getline(input, st);
-            string st1 = st.substr(0, st.find(' '));
-            st.erase(0, st.find(' ') + 1);
-            string st2 = st.substr(2, st.size());
-            config[st1] = st2;
-        }
-    }
+    input >> config;
+    input.close();
     Name = std::move(config["Name"]);
-    HP = stoi(config["HP"]);
-    MP = stoi(config["MP"]);
-    Attack = stoi(config["Attack"]);
-    Armor = stoi(config["Armor"]);
-    Level = stoi(config["Level"]);
+    HP = config["HP"];
+    MP = config["MP"];
+    Attack = config["Attack"];
+    Armor = config["Armor"];
+    Level = config["Level"];
     image[0].load(QString::fromStdString(config["Image1"]));
     image[1].load(QString::fromStdString(config["Image2"]));
     image[2].load(QString::fromStdString(config["Image3"]));

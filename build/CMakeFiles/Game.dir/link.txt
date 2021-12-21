@@ -1,0 +1,2 @@
+/bin/ar qc libGamed.a  CMakeFiles/Game.dir/Game_autogen/mocs_compilation.cpp.o
+/bin/ranlib libGamed.a

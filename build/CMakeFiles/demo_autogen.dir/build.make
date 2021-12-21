@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sovest/CLionProjects/KURSACH
+CMAKE_SOURCE_DIR = /home/sovest/CLionProjects/Game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sovest/CLionProjects/KURSACH/build
+CMAKE_BINARY_DIR = /home/sovest/CLionProjects/Game/build
 
 # Utility rule file for demo_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/sovest/CLionProjects/KURSACH/build
 include CMakeFiles/demo_autogen.dir/progress.make
 
 CMakeFiles/demo_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sovest/CLionProjects/KURSACH/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target demo"
-	/usr/bin/cmake -E cmake_autogen /home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo_autogen.dir/AutogenInfo.json Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sovest/CLionProjects/Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target demo"
+	/usr/bin/cmake -E cmake_autogen /home/sovest/CLionProjects/Game/build/CMakeFiles/demo_autogen.dir/AutogenInfo.json Debug
 
 demo_autogen: CMakeFiles/demo_autogen
 demo_autogen: CMakeFiles/demo_autogen.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/demo_autogen.dir/clean:
 .PHONY : CMakeFiles/demo_autogen.dir/clean
 
 CMakeFiles/demo_autogen.dir/depend:
-	cd /home/sovest/CLionProjects/KURSACH/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sovest/CLionProjects/KURSACH /home/sovest/CLionProjects/KURSACH /home/sovest/CLionProjects/KURSACH/build /home/sovest/CLionProjects/KURSACH/build /home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sovest/CLionProjects/Game/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sovest/CLionProjects/Game /home/sovest/CLionProjects/Game /home/sovest/CLionProjects/Game/build /home/sovest/CLionProjects/Game/build /home/sovest/CLionProjects/Game/build/CMakeFiles/demo_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/demo_autogen.dir/depend
 
