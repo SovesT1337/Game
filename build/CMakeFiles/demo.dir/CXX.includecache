@@ -6,6 +6,38 @@
 
 #IncludeRegexTransform: 
 
+../include/battle_graphics.hpp
+QWidget
+-
+QApplication
+-
+QPushButton
+-
+QLabel
+-
+QImage
+-
+QMouseEvent
+-
+QKeyEvent
+-
+QPainter
+-
+unistd.h
+-
+time.h
+-
+map
+-
+fstream
+-
+nlohmann/json.hpp
+-
+enemy.hpp
+-
+character.hpp
+-
+
 ../include/character.hpp
 string
 -
@@ -392,7 +424,13 @@ limits
 type_traits
 -
 
-/home/sovest/CLionProjects/Game/sources/main_menu.cpp
+/home/sovest/CLionProjects/Game/demo/main.cpp
+QApplication
+-
+QPushButton
+-
+battle_graphics.hpp
+-
 main_menu.hpp
 -
 

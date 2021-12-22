@@ -58,6 +58,10 @@ void Menu::Exit()
 {
     ofstream out(configfile);
     out.close();
+    config["Alive"] = false;
+    out.open("/home/sovest/CLionProjects/Game/config/Config.json");
+    out << config;
+    out.close();
     QApplication::quit();
 }
 
