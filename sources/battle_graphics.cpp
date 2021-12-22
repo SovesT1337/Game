@@ -96,6 +96,14 @@ void Battle::GameOver(QPainter &qp)
     qp.drawImage(900, 350, gameover);
     if (step == 200)
     {
+        json config;
+        ifstream input("/home/sovest/CLionProjects/Game/config/Config.json");
+        input >> config;
+        config["Alive"] = false;
+        input.close();
+        ofstream out("/home/sovest/CLionProjects/Game/config/Config.json");
+        out << config;
+        out.close();
         QApplication::quit();
     }
 }

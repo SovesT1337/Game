@@ -132,6 +132,7 @@ void Battle::Attack(QPainter &qp)
 
 void Battle::randatk(int damage)
 {
+    vtech[turn] = 2;
     click2 = rand() % 4;
     while (stud[click2].dead())
     {
@@ -160,9 +161,10 @@ void Battle::Recieve(QPainter &qp)
         qp.drawImage(LOC[click2].first, LOC[click2].second, bam);
     if (step == 30)
         click2 = -1;
-    if (step >= 30 && step < 50)
+    if (step >= 30 && step < 50){
         dx[turn] += 10;
-
+        vtech[turn] = 0;
+    }
     if (step == 50)
     {
         step = 0;

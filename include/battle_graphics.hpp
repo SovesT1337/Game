@@ -15,7 +15,6 @@
 #include <QPainter>
 #include <unistd.h>
 #include <time.h>
-#include <map>
 #include <fstream>
 #include <nlohmann/json.hpp>
 
@@ -23,7 +22,7 @@
 #include <character.hpp>
 
 using std::ifstream;
-using std::map;
+using std::ofstream;
 using nlohmann::json;
 
 class Battle : public QWidget

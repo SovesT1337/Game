@@ -11,7 +11,7 @@ void Battle::drawchar(QPainter &qp, int i, int frame)
 void Battle::drawenemy(QPainter &qp, int i, int frame)
 {
     if (!enemy[i].dead())
-        qp.drawImage(LOC[i + 4].first - dx[i + 4], LOC[i + 4].second, enemy[i].getImage(int(frame < 3)));
+        qp.drawImage(LOC[i + 4].first - dx[i + 4], LOC[i + 4].second, enemy[i].getImage(int(frame < 3) + vtech[i + 4]));
     else
         qp.drawImage(LOC[i + 4].first - dx[i + 4], LOC[i].second, grave);
 }
