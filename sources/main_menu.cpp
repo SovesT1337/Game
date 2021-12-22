@@ -83,9 +83,9 @@ void Menu::LoadLevel1()
 
 void Menu::LoadLevel2()
 {
-    json battle = {{"Enemy1", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
+    json battle = {{"Enemy1", "/home/sovest/CLionProjects/Game/config/Enemy2.json"},
                    {"Enemy2", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
-                   {"Enemy3", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
+                   {"Enemy3", "/home/sovest/CLionProjects/Game/config/Enemy2.json"},
                    {"Enemy4", "/home/sovest/CLionProjects/Game/config/Enemy1.json"}};
     ofstream out("/home/sovest/CLionProjects/Game/config/Battle.json");
     out << battle;
@@ -99,10 +99,10 @@ void Menu::LoadLevel2()
 
 void Menu::LoadLevel3()
 {
-    json battle = {{"Enemy1", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
-                   {"Enemy2", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
-                   {"Enemy3", "/home/sovest/CLionProjects/Game/config/Enemy1.json"},
-                   {"Enemy4", "/home/sovest/CLionProjects/Game/config/Enemy1.json"}};
+    json battle = {{"Enemy1", "/home/sovest/CLionProjects/Game/config/Enemy2.json"},
+                   {"Enemy2", "/home/sovest/CLionProjects/Game/config/Enemy2.json"},
+                   {"Enemy3", "/home/sovest/CLionProjects/Game/config/Enemy2.json"},
+                   {"Enemy4", "/home/sovest/CLionProjects/Game/config/Enemy2.json"}};
     ofstream out("/home/sovest/CLionProjects/Game/config/Battle.json");
     out << battle;
     out.close();

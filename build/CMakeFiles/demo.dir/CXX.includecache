@@ -6,36 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/battle_graphics.hpp
-QWidget
--
-QApplication
--
-QPushButton
--
-QLabel
--
-QImage
--
-QMouseEvent
--
-QKeyEvent
--
-QPainter
--
-unistd.h
--
-time.h
--
-fstream
--
-nlohmann/json.hpp
--
-enemy.hpp
--
-character.hpp
--
-
 ../include/character.hpp
 string
 -
@@ -58,6 +28,34 @@ QImage
 QRect
 -
 nlohmann/json.hpp
+-
+
+../include/main_menu.hpp
+QWidget
+-
+QApplication
+-
+QPushButton
+-
+QLabel
+-
+QImage
+-
+QMouseEvent
+-
+QKeyEvent
+-
+QPainter
+-
+string
+-
+fstream
+-
+nlohmann/json.hpp
+-
+enemy.hpp
+-
+character.hpp
 -
 
 /home/sovest/.hunter/_Base/18e57a4/252be92/5c48e6d/Install/include/nlohmann/json.hpp
@@ -394,8 +392,8 @@ limits
 type_traits
 -
 
-/home/sovest/CLionProjects/Game/sources/battle_drowing.cpp
-battle_graphics.hpp
+/home/sovest/CLionProjects/Game/sources/main_menu.cpp
+main_menu.hpp
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QRect
